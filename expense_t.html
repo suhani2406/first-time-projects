@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="exp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="expense-form">
+            <div class="input-group">
+                <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" required>
+            </div>
+            <div class="input-group">
+                <label for="expense-amount">Amount</label>
+                <input type="number" id="expense-amount" required>
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <h2>Expenses</h2>
+        <ul id="expense-list"></ul>
+
+        <h3>Total Expenses: Rs<span id="total-amount">0.00</span></h3>
+    </div>
+
+    <script src="expenses.js"></script>
+</body>
+</html>
